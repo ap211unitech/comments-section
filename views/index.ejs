@@ -1,0 +1,17 @@
+<%  style = "../public/style/comments.css" %>
+
+<div class="container mt-4 mb-4">
+    <h1>Comments </h1>
+</div>
+
+
+<div class="container">
+    <%- include('./partials/messages.ejs') %>
+</div>
+
+<form action="/comments" method="post">
+    <div class="container mt-5">
+        <textarea class="form-control" aria-label="With textarea" name="content" rows="10"></textarea>
+        <input class="btn btn-danger mt-4" type="submit" value="Add Comment">
+    </div>
+</form>

@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    /* white-space: pre-wrap!important; */
+    border: #dc3545;
+    box-shadow: 0px 0px 2px 4px #ffc4cb!important;
+}

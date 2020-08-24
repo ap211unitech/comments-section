@@ -1,0 +1,16 @@
+<% if(typeof comments != 'undefined' ) { %>
+<% comments.forEach(function(comment) { %>
+<% comment.msg=comment.msg.replace(/sp/g,"&nbsp;") %>
+<% comment.msg=comment.msg.replace(/lb/g,"<br>") %>
+<% comment.msg=comment.msg.replace(/[\[\]]/g, "") %>
+<% comment.msg=comment.msg.trim() %>
+<% if( comment.msg !="" ) {%>
+<div class="card mt-4">
+    <div class="card-body">
+        <%- comment.msg %>
+    </div>
+</div>
+<% } %>
+
+<% }); %>
+<% } %>
